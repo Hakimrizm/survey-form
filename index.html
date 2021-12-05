@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey From</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header>
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <p id="description" class="text-center">Survey human for the rest</p>
+        </header>
+
+        <form action="" method="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Input your name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span class="clue">(Optional)</span></label>
+                <input type="number" id="number" class="form-control" placeholder="Age" min="13" max="40" required>
+            </div>
+            <div class="form-group">
+                <p class="text">Wich one option best describes your current role?</p>
+                <select name="" id="dropdown" class="form-control">
+                    <option disabled selected value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full time</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="text">Are you pretty?</p>
+                <label>
+                    <input type="radio" name="user-pretty"  value="pretty" class="input-radio">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="user-pretty" value="pretty" checked class="input-radio">
+                    No
+                </label>
+                <label>
+                    <input type="radio" name="user-pretty" value="pretty" class="input-radio">
+                    Maybe
+                </label>
+                <label>
+                    <input type="radio" name="user-pretty" value="pretty" class="input-radio">
+                    I'm not sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="text">Choose your programming language do you like</p>
+                <label>
+                    <input type="checkbox" name="prefer" value="Java" class="input-checkbox">
+                    Java
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="Python" class="input-checkbox">
+                    Python
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="Php" class="input-checkbox">
+                    Php
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="Javascript" class="input-checkbox">
+                    Javascript
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="comments">Any sugestion or comments?</label>
+                <textarea id="comments" class="form-control" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 10px;
+}
+
+header p{
+    margin-top: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(221, 218, 209);
+    /* color: white; */
+}
+
+.container{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.text-center{
+    text-align: center;
+}
+
+#survey-form{
+    max-width: 50%;
+}
+
+label {
+    display: flex;
+    margin-top: 10px;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    margin-top: 10px;
+}
+
+.form-control:focus{
+    border-color: lightblue;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(103, 59, 183, 0.25);
+}
+
+.clue{
+    margin-left: 5px;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+
+.text{
+    margin-top: 10px;
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.652rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+textarea {
+    height: 100px;
+}
+
+.btn-submit{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: rgb(103, 59, 183);
+    color: rgb(255, 247, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 1px solid rgba(77, 209, 0, 0.124);
+}
+
+@media (min-width: 800px) {
+    #survey-form{
+        margin: 50px auto;
+    }
+}
